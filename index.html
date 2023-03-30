@@ -67,16 +67,17 @@
                   />
                 </div>
                 <div class="col-sm-8">
+                  <form>
                   <div class="row">
                     <div class="col-sm-6">
-                      <div class="form-floating  mb-4">
+                      <div class="form-floating mb-4">
                         <input
                           type="text"
                           class="form-control form-control-lg"
                           name="firstname"
                           id="firstname"
                         />
-                        <label class="form-label" for="firstname">First Name</label>
+                        <label class="form-label" for="firstname">ชื่อ</label>
                       </div>
                     </div>
                     <div class="col-sm-6">
@@ -87,7 +88,7 @@
                           name="lastname"
                           id="lastname"
                         />
-                        <label class="form-label" for="lastname">Last Name</label>
+                        <label class="form-label" for="lastname">นามสกุล</label>
                       </div>
                     </div>
                   </div>
@@ -98,7 +99,7 @@
                       name="email"
                       id="email"
                     />
-                    <label class="form-label" for="email">Email</label>
+                    <label class="form-label" for="email">อีเมล</label>
                   </div>
                   <div class="form-floating mb-4">
                     <input
@@ -107,17 +108,41 @@
                       name="password1"
                       id="password1"
                     />
-                    <label class="form-label" for="password1">Password</label>
+                    <label class="form-label" for="password1">รหัสผ่าน</label>
                   </div>
-                  <div class="form-floating mb-4">
-                    <input
-                      type="password"
-                      class="form-control form-control-lg"
-                      name="password2"
-                      id="password2"
-                    />
-                    <label class="form-label" for="password2">Password Confirmation</label>
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <div class="form-floating mb-4">
+                        <input
+                          type="date"
+                          value="2003-01-01"
+                          class="form-control form-control-lg"
+                          name="birthdate"
+                          id="birthdate"
+                        />
+                        <label class="form-label" for="birthdate">วันเกิด</label>
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="form-floating mb-4">
+                        <input class="btn-reset float-end" type="reset" value="กดเพื่อรีเซ็ตข้อมูลทั้งหมด" />
+                      </div>
+                    </div>
                   </div>
+
+                  <div class="row">
+                    <div class="col-3">
+                      <button class="btn-custom w-100" type="submit">สมัครสมาชิก</button>
+                    </div>
+                    <div class="col-9 d-flex">
+                      <div class="form-check mt-auto">
+                        <input class="form-check-input" type="checkbox" name="agreement" id="agreement" />
+                        <label class="form-check-label" for="agreement">ยอมรับข้อตกลงการใช้งาน</label>
+                      </div>
+                    </div>
+                  </div>
+
+                </form>
                 </div>
               </div>
             </div>

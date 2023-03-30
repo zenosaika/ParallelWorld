@@ -2,3 +2,26 @@ p {
     font-size: 1.5vw;
     color: midnightblue;
 }
+
+.btn-custom {
+    background: #ec008c;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #fc6767, #ec008c);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #fc6767, #ec008c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+    border-radius: 8px;
+    border-style: none;
+
+    padding: 10px 16px;
+
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: 500;
+  }
+
+.btn-reset {
+    color: red;
+    font-size: 14px;
+    text-decoration: underline;
+    border: none;
+    background-color: inherit;
+}
