@@ -11,6 +11,9 @@
       crossorigin="anonymous"
     />
     <link href="https://zenosaika.github.io/ParallelWorld/custom.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree&display=swap" rel="stylesheet">
     <title>พาราเรลเวิลด์.คอม</title>
   </head>
   <body>
@@ -42,13 +45,13 @@
     </nav>
 
     <div class="container text-center py-5 d-none d-sm-block">
-      <p>คุณกำลังตามหา สไตน์เกท อยู่หรือเปล่า?</p>
+      <p style="font-size: 2.5vw;">คุณกำลังตามหา <span style="color: midnightblue;">สไตน์เกท</span> อยู่หรือเปล่า?</p>
       <p>
-        พาราเรลเวิลด์.คอม ให้บริการ "พาราเรลซิฟ" ไปยังเวิลด์ไลน์ต่าง ๆ มานานกว่า
-        3000 ปี
+        พาราเรลเวิลด์.คอม ให้บริการ <span style="color:rgb(29, 29, 155)">"พาราเรลซิฟ"</span> 
+        ไปยังเวิลด์ไลน์ต่าง ๆ มานานกว่า 3000 ปี
       </p>
       <p>
-        พิเศษ !! สมัครสมาชิกวันนี้ รับฟรี "อความารีน อูป้า"
+        พิเศษ !! สมัครสมาชิกวันนี้ รับฟรี <span style="color:rgb(33, 129, 97)">"อความารีน อูป้า"</span>
         ของขึ้นชื่อจากเวิลด์ไลน์ X42 !!
       </p>
     </div>
@@ -56,14 +59,21 @@
     <div class="container">
       <div class="row justify-content-center align-items-center">
         <div class="col-sm-8">
-          <div class="card mt-3 mb-3">
+          <div class="card glass mt-3 mb-3">
             <div class="card-body">
               <div class="row">
                 <div class="col-sm-4 mb-3">
                   <img
-                    src="https://zenosaika.github.io/ParallelWorld/assets/images/luka.png"
+                    src="https://zenosaika.github.io/ParallelWorld/assets/images/christina.jpg"
                     alt="Profile Picture"
-                    class="img-fluid rounded-circle mx-auto d-block"
+                    class="img-fluid rounded-circle mx-auto d-none d-sm-block"
+                    style="border: 3px solid black;"
+                  />
+                  <img
+                    src="https://zenosaika.github.io/ParallelWorld/assets/images/christina.jpg"
+                    alt="Profile Picture"
+                    class="img-fluid rounded-circle mx-auto d-block d-sm-none w-50"
+                    style="border: 3px solid black;"
                   />
                 </div>
                 <div class="col-sm-8">
@@ -124,23 +134,21 @@
                       </div>
                     </div>
                     <div class="col-sm-6">
-                      <div class="form-floating mb-4">
-                        <input class="btn-reset float-end" type="reset" value="กดเพื่อรีเซ็ตข้อมูลทั้งหมด" />
+                      <div class="form-floating mb-4 d-none d-sm-block">
+                        <input class="btn-reset float-end" type="reset" value="กดเพื่อรีเซ็ตข้อมูล" />
                       </div>
                     </div>
                   </div>
 
-                  <div class="row">
-                    <div class="col-3">
-                      <button class="btn-custom w-100" type="submit">สมัครสมาชิก</button>
+                  <div class="flex-box mb-3">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" name="agreement" id="agreement" />
+                      <label class="form-check-label" for="agreement">ยอมรับข้อตกลงการใช้งาน</label>
                     </div>
-                    <div class="col-9 d-flex">
-                      <div class="form-check mt-auto">
-                        <input class="form-check-input" type="checkbox" name="agreement" id="agreement" />
-                        <label class="form-check-label" for="agreement">ยอมรับข้อตกลงการใช้งาน</label>
-                      </div>
-                    </div>
+                    <input class="btn-reset d-sm-none" type="reset" value="รีเซ็ตข้อมูล" />
                   </div>
+                  
+                  <button class="btn-custom mb-3" type="submit">สมัครสมาชิก</button>
 
                 </form>
                 </div>
